@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo Play', sans-serif;
+    background-color: aliceblue;
+    color: black;
+    line-height: 1.6;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(244, 242, 239);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+article img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footerNAV {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footerNAV a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footerNAV a:hover {
+    color: lightblue;
+}
+
+@media (max-width: 768px) {
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+
+
+.descripcion {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.precio {
+    font-weight: bold;
+    color: #007b7f;
+    font-size: 1.2rem;
+}
